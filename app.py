@@ -1,12 +1,22 @@
+import os
+import sys
 from flask import Flask, render_template, request, redirect, url_for, flash
 import requests
+from dotenv import load_dotenv
+load_dotenv()
+
 
 app = Flask(__name__)
-app.secret_key = '3d88dcb4ba9015fa7d8924664dbaf67a'  # Needed for flash messages
 
-# Telegram bot token and chat ID
-TELEGRAM_BOT_TOKEN = '8048902693:AAGv_onoqAQ3ckyzpkpIfx6XzH-DfvFXEmE'
-TELEGRAM_CHAT_ID = '1124986155'  # Usually your user ID or group ID
+# Load secrets from environment variables (no hardcoded defaults!)
+app.secret_key = os.getenv('FLASK_SECRET_KEY')
+TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
+
+# Exit if any required env var is missing
+if not app.secret_key or not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+    print("ERROR: Missing environment variables. Please set FLASK_SECRET_KEY, TELEGRAM_BOT_TOKEN, and TELEGRAM_CHAT_ID.", file=sys.stderr)
+    sys.exit(1)
 
 
 @app.route('/')
@@ -31,9 +41,7 @@ def contact():
         f"*Message:* {message}"
     )
 
-    send_message_url = (
-        f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    )
+    send_message_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
 
     payload = {
         'chat_id': TELEGRAM_CHAT_ID,
