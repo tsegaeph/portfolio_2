@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tsega Ephrem</title>
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/T.png') }}">
+
+  <!-- Correct CSS path -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  
+  <!-- External fonts and icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="bg-layer"></div>
+  <header>
+    <h1>Tsega</h1>
+  
+    <!-- Hamburger menu icon (toggle) -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+    <!-- Nav with an id for JS toggling -->
+    <nav id="navbar">
+      <a href="#hero" class="nav-link">HOME</a>
+      <a href="#about" class="nav-link">ABOUT</a>
+      <a href="#skills-section" class="nav-link">SKILLS</a>
+      <a href="#projects" class="nav-link">PROJECTS</a>
+      <a href="#hobby-section" class="nav-link">HOBBY</a>
+      <a href="#contact" class="nav-link">CONTACT</a>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="hero">
+      <div class="portrait">
+        <img src="{{ url_for('static', filename='assets/tsega.png') }}" alt="Tsega" />
+      </div>
+
+      <div class="intro">
+        <h1>Hey, I'm Tsega</h1>
+        <h2>I am a <span class="typed-text"></span><span class="cursor">|</span></h2>
+        <p class="description">
+          I build stuff for the web, mobile, and sometimes just for fun. This site is kind of my little corner on the internet, so feel free to scroll around and check out what I’ve been working on, the skills I’ve picked up, and a bit of what I do when I’m not staring at code.
+        </p>
+
+        <div class="social-icons">
+          <ul class="custom-social">
+            <li><a href="https://t.me/IDONHAVEAUSERNAME" target="_blank"><i class="fa fa-telegram"></i><span> - Telegram</span></a></li>
+            <li><a href="https://www.linkedin.com/in/tsegaephrem" target="_blank"><i class="fa fa-linkedin"></i><span> - LinkedIn</span></a></li>
+            <li><a href="https://github.com/tsegaeph" target="_blank"><i class="fa fa-github"></i><span> - GitHub</span></a></li>
+            <li><a href="https://instagram.com/tsega_00" target="_blank"><i class="fa fa-instagram"></i><span> - Instagram</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="{{ url_for('static', filename='assets/tsegaa.png') }}" alt="Tsega's Image">
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p class="about-description" id="aboutText" data-text="People say I’m a dedicated person… well, they didn’t lie. 😌 I’m the kind of person who can’t sleep until I’ve fixed that one bug or figured out why something isn’t working. Maybe it’s because of my horoscope? 🤔 …jk, I don’t believe in that.<br><br>I’m deeply fascinated by the world of technology — not just using it, but understanding how it works under the hood. For me, tech is a way to join my artistic side with building things that actually help people. Whether it’s designing clean user experiences or experimenting with creative projects, it’s as much fun as it is work.<br><br>I’m also into cybersecurity. you know, the whole “break it to fix it” thing. 🕵🏽‍♂️ If someone leaves their system exposed, I might just be the reason their password ends up on a sticky note. 😏 (Kidding, of course. Or am I?) I'm currently part of a growing community, trying to level up my skills one exploit at a time.<br><br>On a serious note, I’m easy-going, great at working with teams, and always up for sharing ideas or helping bring a project to life."></p>
+          <div class="about-info">
+            <div class="status-box"><h3>📍 Location</h3><p>Addis Ababa, Ethiopia</p></div>
+            <div class="status-box"><h3>🎓 Field of Study</h3><p>Software Engineering</p></div>
+            <div class="status-box"><h3>🏫 Learning At</h3><p>Addis Ababa University & ALX</p></div>
+          </div>
+          <a href="{{ url_for('static', filename='assets/Tsega_CV.pdf') }}" class="cv-button" download>📄 Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills-section">
+      <div class="skills-content">
+        <div class="skills-left">
+          <h2 class="skills-title">My Skills</h2>
+          <p class="skills-text">I started out with the basics — simple HTML, CSS, and a bit of JavaScript — just building small pages for practice. After a while, I wanted to try out some backend work, so I picked up Flask to handle simple servers and APIs. <br><br>
+
+            At the same time, I wanted to get better at design, so I went deep into Figma — mostly through way too many YouTube videos and a ton of trial and error. Eventually, I realized I should push my frontend skills further, so I learned React to build more dynamic interfaces. <br><br>
+            
+            From there, it felt natural to go full-stack. I jumped into Node.js and started working with APIs and databases, especially MongoDB, through various projects. Honestly, some of these skills came from school, but most came from me staying up way too late trying to figure things out on my own.</p>
+        </div>
+        <div class="skills-right">
+          <div class="skill-card card1">
+            <img src="{{ url_for('static', filename='assets/react.png') }}" alt="React" />
+            <h3>React</h3>
+            <p>Builds fast, interactive UIs with reusable components. Makes frontend work fun. ⚛️</p>
+          </div>
+          <div class="skill-card card2">
+            <img src="{{ url_for('static', filename='assets/node.png') }}" alt="Node.js" />
+            <h3>Node.js</h3>
+            <p>Handles server-side like a breeze. RESTful APIs and real-time stuff? I'm in.</p>
+          </div>
+          <div class="skill-card card3">
+            <img src="{{ url_for('static', filename='assets/figma.png') }}" alt="Figma" />
+            <h3>Figma</h3>
+            <p>Where I design and prototype before I touch code. Learned it through YouTube and trial/error. 🎨</p>
+          </div>
+          <div class="skill-card card4">
+            <img src="{{ url_for('static', filename='assets/mongo.png') }}" alt="MongoDB" />
+            <h3>MongoDB</h3>
+            <p>Flexible database that just works well with my projects. Great for scaling and tinkering. 🗄️</p>
+          </div>
+          <div class="skill-card card5">
+            <img src="{{ url_for('static', filename='assets/python.png') }}" alt="Python" />
+            <h3>Python</h3>
+            <p>Love it for scripts, backend logic, and just experimenting with new ideas. 🐍</p>
+          </div>
+          <div class="skill-card card6">
+            <img src="{{ url_for('static', filename='assets/js.png') }}" alt="JavaScript" />
+            <h3>JavaScript</h3>
+            <p>The language that glues it all together on the web. Makes things come alive. ✨</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="img-container">
+            <img src="{{ url_for('static', filename='assets/puppy.png') }}" alt="Trackie">
+          </div>
+          <div class="card-details">
+            <h2>Trackie</h2>
+            <p>Trackie is an all‑in‑one productivity web app made for engineering students. It includes a task manager, class schedule tracker, expense tracker, and even built‑in study tools to keep everything organized in one place.
+              👉 <a href="https://trackiee.vercel.app" target="_blank"><strong>Check out Trackie</strong></a></p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="img-container">
+            <img src="{{ url_for('static', filename='assets/tulia.jpg') }}" alt="Tulia">
+          </div>
+          <div class="card-details">
+            <h2>Tulia</h2>
+            <p>Tulia is a web app project focused on mental health and wellbeing. It has features like mood tracking, guided meditations, short games, and a chatbot (which I’m currently training myself as I learn more about ML). It’s an ongoing project that I’m actively growing as I improve my AI skills.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="img-container">
+            <img src="{{ url_for('static', filename='assets/portfolio.png') }}" alt="Portfolio">
+          </div>
+          <div class="card-details">
+            <h2>Portfolio</h2>
+            <p>You’re looking at it! 😎 Built from scratch with HTML, CSS, and JavaScript, with Flask powering the backend. It’s fully responsive, cyberpunk‑inspired, and a little corner of the internet that reflects who I am and what I do.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="img-container">
+            <img src="{{ url_for('static', filename='assets/sharify.png') }}" alt="Sharify">
+          </div>
+          <div class="card-details">
+            <h2>Sharify</h2>
+            <p>Sharify started as a Kotlin project and later evolved into a Flutter app. It’s a simple and useful platform for lending and borrowing items — built to learn how to connect people and manage items through a clean mobile interface.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="img-container">
+            <img src="{{ url_for('static', filename='assets/ongoing.png') }}" alt="Mobile Apps">
+          </div>
+          <div class="card-details">
+            <h2>In Progress</h2>
+            <p>I’m also working on a couple of mobile app ideas that I’m not ready to fully announce yet. These projects explore features like real‑time collaboration, secure user accounts, and sleek cross‑platform experiences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobby Section -->
+    <section id="hobby-section">
+      <div class="hobby-container">
+        <div class="hobby-intro">
+          <h2>My Hobby</h2>
+          <p>Time to take a break from the professional stuff! When I’m not coding, you’ll probably find me sketching or jamming to music. Lately, I’ve been using pen more for my sketches, it forces me to fix mistakes without an eraser… kinda like life, huh?😅<br><br>So, take a breather and check out some of the sketches 🎨 I’ve made — whether they came from a spark of inspiration or just plain boredom.</p>
+        </div>
+        <div class="slider-wrapper">
+          <button class="slide-btn prev">❮</button>
+          
+          <div class="slider">
+            <img src="{{ url_for('static', filename='assets/sld1.jpg') }}" alt="Sketch 1">
+            <img src="{{ url_for('static', filename='assets/sld2.jpg') }}" alt="Sketch 2">
+            <img src="{{ url_for('static', filename='assets/sld3.jpg') }}" alt="Sketch 3">
+            <img src="{{ url_for('static', filename='assets/sld4.jpg') }}" alt="Sketch 4">
+            <img src="{{ url_for('static', filename='assets/sld5.jpg') }}" alt="Sketch 5">
+          </div>
+          
+          <button class="slide-btn next">❯</button>
+        </div>
+        
+        <!-- Modal for zoom -->
+        <div id="image-modal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="modal-img">
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section">
+      <div class="contact-container">
+        <h2 class="section-title neon-text">Contact Me</h2>
+        <form action="/contact" method="POST" class="contact-form">
+          
+          <!-- Name -->
+          <label for="name">
+            Name <span style="color: red;">*</span>
+          </label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          
+          <!-- Contact -->
+          <label for="contact">
+            Contact (optional)
+          </label>
+          <input type="text" id="contact" name="contact" placeholder="Your contact (optional)">
+          
+          <!-- Message -->
+          <label for="message">
+            Message <span style="color: red;">*</span>
+          </label>
+          <textarea id="message" name="message" placeholder="Your message" required></textarea>
+          
+          <!-- Submit -->
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 <a href="#hero" class="footer-name">Tsega Ephrem</a>. No bugs were harmed in the making of this site 🐛💻</p>
+  </footer>
+
+  
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
