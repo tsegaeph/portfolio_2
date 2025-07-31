@@ -29,7 +29,7 @@
     <nav id="navbar">
       <a href="#hero" class="nav-link">HOME</a>
       <a href="#about" class="nav-link">ABOUT</a>
-      <a href="#skills-section" class="nav-link">SKILLS</a>
+      <a href="#skills-section" class="nav-link">SERVICES</a>
       <a href="#projects" class="nav-link">PROJECTS</a>
       <a href="#hobby-section" class="nav-link">HOBBY</a>
       <a href="#contact" class="nav-link">CONTACT</a>
@@ -57,6 +57,11 @@
             <li><a href="https://instagram.com/tsega_00" target="_blank"><i class="fa fa-instagram"></i><span> - Instagram</span></a></li>
           </ul>
         </div>
+
+        <!-- Hire Me Button -->
+        <div class="hire-me-container">
+          <a href="#contact" class="hire-me-button">Hire Me</a>
+        </div>
       </div>
     </section>
 
@@ -70,9 +75,9 @@
           <h2>About Me</h2>
           <p class="about-description" id="aboutText" data-text="People say I’m a dedicated person… well, they didn’t lie. 😌 I’m the kind of person who can’t sleep until I’ve fixed that one bug or figured out why something isn’t working. Maybe it’s because of my horoscope? 🤔 …jk, I don’t believe in that.<br><br>I’m deeply fascinated by the world of technology — not just using it, but understanding how it works under the hood. For me, tech is a way to join my artistic side with building things that actually help people. Whether it’s designing clean user experiences or experimenting with creative projects, it’s as much fun as it is work.<br><br>I’m also into cybersecurity. you know, the whole “break it to fix it” thing. 🕵🏽‍♂️ If someone leaves their system exposed, I might just be the reason their password ends up on a sticky note. 😏 (Kidding, of course. Or am I?) I'm currently part of a growing community, trying to level up my skills one exploit at a time.<br><br>On a serious note, I’m easy-going, great at working with teams, and always up for sharing ideas or helping bring a project to life."></p>
           <div class="about-info">
-            <div class="status-box"><h3>📍 Location</h3><p>Addis Ababa, Ethiopia</p></div>
-            <div class="status-box"><h3>🎓 Field of Study</h3><p>Software Engineering</p></div>
-            <div class="status-box"><h3>🏫 Learning At</h3><p>Addis Ababa University & ALX</p></div>
+            <div class="status-box"><h3>🎓 Education</h3><p>I'm currently pursuing my BSc. in Software Engineering at Addis Ababa University (AAU), where I work hard to maintain a strong GPA. Beyond the classroom, I focus on applying what I learn by building real-world projects and continuously challenging myself to improve.</p></div>
+            <div class="status-box"><h3>💼 Experience</h3><p>Over the past two years, I’ve immersed myself in the world of software development. Most of my experience lies in web development, where I’ve built full-stack applications. I also have hands-on exposure to mobile app development using Flutter and Kotlin. I’ve worked both independently and as part of collaborative teams to deliver real-world projects.</p></div>
+            <div class="status-box"><h3>🚀 Current Focus</h3><p>Right now, I'm deepening my skills in full-stack development using React and Node.js. I’m also exploring machine learning to power AI features in my apps — like chatbots, mood forecasting, and gesture recognition.</p></div>
           </div>
           <a href="{{ url_for('static', filename='assets/Tsega_CV.pdf') }}" class="cv-button" download>📄 Download CV</a>
         </div>
@@ -83,14 +88,56 @@
     <section id="skills-section">
       <div class="skills-content">
         <div class="skills-left">
-          <h2 class="skills-title">My Skills</h2>
-          <p class="skills-text">I started out with the basics — simple HTML, CSS, and a bit of JavaScript — just building small pages for practice. After a while, I wanted to try out some backend work, so I picked up Flask to handle simple servers and APIs. <br><br>
-
-            At the same time, I wanted to get better at design, so I went deep into Figma — mostly through way too many YouTube videos and a ton of trial and error. Eventually, I realized I should push my frontend skills further, so I learned React to build more dynamic interfaces. <br><br>
-            
-            From there, it felt natural to go full-stack. I jumped into Node.js and started working with APIs and databases, especially MongoDB, through various projects. Honestly, some of these skills came from school, but most came from me staying up way too late trying to figure things out on my own.</p>
+          <h2 class="skills-title">What I Provide</h2>
+          <ul class="services-list">
+            <li>
+              🌐 Build responsive and dynamic websites
+              <p class="service-desc">
+                I create modern, mobile-friendly websites using HTML, CSS, and React, focusing on usability and performance. Most of these skills came from hands-on projects and continuous learning through tutorials and experimentation.
+              </p>
+            </li>
+            <li>
+              📱 Develop mobile apps using Flutter and Kotlin
+              <p class="service-desc">
+                I build cross-platform mobile apps with Flutter and native Android apps using Kotlin. I gained this experience through academic projects and personal apps I developed to solve real-life problems.
+              </p>
+            </li>
+            <li>
+              🎨 Design clean UI/UX using Figma
+              <p class="service-desc">
+                I design user interfaces and prototypes with Figma, blending creativity and functionality. This skill grew from exploring design principles and learning through online courses and trial and error.
+              </p>
+            </li>
+            <li>
+              🛠️ Set up REST APIs and backend services with Node.js & Flask
+              <p class="service-desc">
+                I build scalable backend services and RESTful APIs using Node.js and Flask, powering web and mobile apps. These skills were developed through building full-stack projects and backend courses.
+              </p>
+            </li>
+            <li>
+              📊 Create dashboards and data visualizations
+              <p class="service-desc">
+                I develop interactive dashboards to visualize data trends and insights using React and chart libraries, improving decision-making. This ability came from working on real-world projects involving data.
+              </p>
+            </li>
+            <li>
+              🤖 Implement basic AI features like chatbots or mood tracking
+              <p class="service-desc">
+                I experiment with machine learning concepts to build simple AI-powered features, including chatbots and mood analysis tools, mostly by self-study and integrating open-source libraries.
+              </p>
+            </li>
+            <li>
+              🚀 Deploy full-stack projects and manage version control
+              <p class="service-desc">
+                I deploy applications using platforms like Vercel and Render, and handle Git version control efficiently to maintain code quality and collaboration. This expertise comes from managing my own projects and teamwork.
+              </p>
+            </li>
+          </ul>
         </div>
+        
+    
         <div class="skills-right">
+          <!-- Skill cards remain unchanged -->
           <div class="skill-card card1">
             <img src="{{ url_for('static', filename='assets/react.png') }}" alt="React" />
             <h3>React</h3>
@@ -124,6 +171,7 @@
         </div>
       </div>
     </section>
+    
 
     <!-- Projects Section -->
     <section id="projects">
