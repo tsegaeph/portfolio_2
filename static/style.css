@@ -205,8 +205,8 @@ section {
 .custom-social li a {
   text-decoration: none;
   display: block;
-  width: 150px;
-  height: 60px;
+  width: 120px;
+  height: 40px;
   background: #b91919;
   text-align: left;
   padding-left: 5px;
@@ -247,8 +247,9 @@ section {
 }
 
 .custom-social li a span {
+  font-size: 0.8rem;
   position: absolute;
-  top: 20px;
+  top: 5px;
   color: #d3d3d3;
   letter-spacing: 2px;
   transition: 0.5s;
@@ -318,20 +319,20 @@ section {
 
 .about-container {
   display: flex;
-  gap: 50px;
+  gap: 3rem;
   align-items: center;
-  width: 90%;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .about-image img {
-  width: 130%;
+  width: 90%;
   border-radius: 12px;
   object-fit: contain;
   background: transparent;
   position: relative;
-  right: 50%;
+  right: 10%;
   bottom: 100px;
 }
 
@@ -385,7 +386,7 @@ section {
 }
 
 .status-box {
-  flex: 1 1 150px;
+  flex: 1 1 100px;
   background: rgba(255, 0, 0, 0.1);
   padding: 15px;
   border-radius: 10px;
@@ -394,7 +395,7 @@ section {
   opacity: 0;
   transform: translateY(-200px);
   transition: transform 0.3s ease;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .status-box.show {
@@ -412,6 +413,9 @@ section {
   border: solid 1px;
   border-radius: 20px;
   transition: background 0.3s;
+  font-size: 0.8rem;
+  position: relative;
+  top: 1rem;
 }
 .cv-button:hover {
   background: #cc0000;
@@ -609,11 +613,12 @@ section {
 
 #hobby-section {
   padding: 80px 20px;
-  text-align: center;
+  text-align: justify;
   color: white;
 }
 
 .hobby-intro h2 {
+  text-align: center;
   font-size: 3rem;
   margin-bottom: 40px;
   color: var(--accent-color);
@@ -760,9 +765,9 @@ section {
 .contact-form button {
   background-color: var(--accent-color);
   border: none;
-  padding: 12px;
-  width: 25%;
-  font-size: 1.2rem;
+  padding: 8px;
+  width: 20%;
+  font-size: 1rem;
   color: black;
   font-weight: bold;
   border-radius: 10px;
