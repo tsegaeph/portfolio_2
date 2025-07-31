@@ -22,7 +22,9 @@
   scroll-behavior: smooth;
 }
 
-body {
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -802,12 +804,11 @@ section {
 
   body {
     background:black;
+    overflow-x: hidden;
     
   }
 
   .menu-toggle {
-    position: relative;
-    right: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -871,7 +872,7 @@ section {
     width: 100vw;
   }
   .intro h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 10px;
     color: #fff;
   }
@@ -950,9 +951,9 @@ section {
     border-radius: 10px;
   }
   #skills-section{
-    padding: 120px 40px;
+    padding: 10px 40px;
     position: relative;
-    bottom: 30px;
+    top: 100px;
   }
   .skills-title{
     font-size: 1.5rem;
@@ -997,7 +998,7 @@ section {
   #projects{
     padding: 40px 20px;
     position: relative;
-    bottom: 150px;
+    top: 100px;
   }
   #projects h2{
     font-size: 1.5rem;
@@ -1029,7 +1030,7 @@ section {
   }
   #hobby-section{
     position: relative;
-    bottom: 170px;
+    top: 130px;
     padding-top: 40px;
   }
   .hobby-intro h2{
@@ -1042,7 +1043,7 @@ section {
   }
   #contact-section{
     position: relative;
-    bottom: 150px;
+    top: 150px;
     padding-top: 40px;
     padding-bottom: 0px;
   }
