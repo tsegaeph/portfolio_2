@@ -802,13 +802,12 @@ section {
 
   body {
     background:black;
-    background-size: cover;
-    background-attachment: scroll; /* ensures it scrolls with content */
+    
   }
 
   .menu-toggle {
     position: relative;
-    right: 40%;
+    right: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -872,12 +871,12 @@ section {
     width: 100vw;
   }
   .intro h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 10px;
     color: #fff;
   }
   .intro p{
-    font-size: 0.8rem;
+    font-size: 1rem;
     width: 83vw;
   }
   .portrait {
@@ -903,7 +902,7 @@ section {
     position: relative;
   }
   .custom-social li a .fa {
-    font-size: 0.5em;
+    font-size: 0.7em;
     line-height: 30px;
     padding-right: 5px;
   }
@@ -916,8 +915,7 @@ section {
   }
 
   #about{
-    position: relative;
-    bottom: 100px;
+    padding-top: 150px;
   }
   .about-image img {
     width: 70%;
@@ -929,7 +927,7 @@ section {
   }
   .about-text{
     width: 95%;
-    font-size: 0.8rem;
+    font-size: 1rem;
     position: relative;
     bottom: 100px;
   }
@@ -944,17 +942,17 @@ section {
     font-size: 1rem;
   }
   .status-box p{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .cv-button{
     position: relative;
-    top: 180px;
+    top: 230px;
     border-radius: 10px;
   }
   #skills-section{
-    padding: 40px 40px;
+    padding: 120px 40px;
     position: relative;
-    bottom: 110px;
+    bottom: 30px;
   }
   .skills-title{
     font-size: 1.5rem;
@@ -963,7 +961,7 @@ section {
 
   .skills-text{
     width: 82vw;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: justify;
     position: relative;
     right:27vw;
@@ -991,7 +989,7 @@ section {
     margin-top:5px;
   }
   .skill-card p{
-    font-size: 0.7rem;
+    font-size: 1rem;
     width: 25vw;
     text-align: start;
     padding: 0;
@@ -1005,8 +1003,8 @@ section {
     font-size: 1.5rem;
   }
   .project-card, .card-details{
-    width: 30vw;
-    height: 30vh;
+    width: 40vw;
+    height: 40vh;
     gap: 0.5rem;
   }
   .projects-container{
@@ -1021,10 +1019,10 @@ section {
   }
   .projects-container .project-card .card-details p{
     line-height: 1;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     text-align: center;
     padding: 5px;
-    width: 25vw;
+    width: 40vw;
     position: relative;
     right: 15px;
     bottom: 5px;
@@ -1040,7 +1038,7 @@ section {
   .hobby-intro p{
     width: 95%;
     text-align: justify;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   #contact-section{
     position: relative;
@@ -1056,16 +1054,16 @@ section {
     text-align: center;
   }
   .contact-form label{
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .contact-form textarea{
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .contact-form input{
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .contact-form button{
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 30%;
     padding: 8px;
   }
