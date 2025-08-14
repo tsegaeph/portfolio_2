@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Typing effect for hero section
   const typedText = document.querySelector(".typed-text");
-  const words = ["developer", "designer", "software engineer"];
+  const words = ["MERN developer", "UI/UX designer", "software engineer"];
   let wordIndex = 0;
   let charIndex = 0;
   let typing = true;

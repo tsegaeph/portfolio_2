@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tsega Ephrem</title>
   <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/T.png') }}">
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" ref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
 
   <!-- Correct CSS path -->
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
@@ -39,7 +42,7 @@
   <main>
     <section id="hero">
       <div class="portrait">
-        <img src="{{ url_for('static', filename='assets/tsega.png') }}" alt="Tsega" />
+        <img src="{{ url_for('static', filename='assets/tsega4.png') }}" alt="Tsega" />
       </div>
 
       <div class="intro">
@@ -51,26 +54,43 @@
 
         <div class="social-icons">
           <ul class="custom-social">
-            <li><a href="https://t.me/IDONHAVEAUSERNAME" target="_blank"><i class="fa fa-telegram"></i><span> - Telegram</span></a></li>
-            <li><a href="https://www.linkedin.com/in/tsegaephrem" target="_blank"><i class="fa fa-linkedin"></i><span> - LinkedIn</span></a></li>
-            <li><a href="https://github.com/tsegaeph" target="_blank"><i class="fa fa-github"></i><span> - GitHub</span></a></li>
-            <li><a href="https://instagram.com/tsega_00" target="_blank"><i class="fa fa-instagram"></i><span> - Instagram</span></a></li>
+            <li>
+              <a href="https://t.me/IDONHAVEAUSERNAME" target="_blank">
+                <i class="fab fa-telegram"></i><span> Telegram</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/tsegaephrem" target="_blank">
+                <i class="fab fa-linkedin"></i><span> LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/tsegaeph" target="_blank">
+                <i class="fab fa-github"></i><span> GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/tsega_00" target="_blank">
+                <i class="fab fa-instagram"></i><span> Instagram</span>
+              </a>
+            </li>
           </ul>
         </div>
+        
 
-        <!-- Hire Me Button -->
-        <div class="hire-me-container">
-          <a href="#contact" class="hire-me-button">Hire Me</a>
+        <div class="button-container">
+          <a href="#contact" class="hire-me-button"><i class="fas fa-handshake"></i>Hire Me</a>
+          <a href="{{ url_for('static', filename='assets/Tsega_CV.pdf') }}" class="cv-button" download><i class="fas fa-download"></i>
+           Download CV
+          </a>
         </div>
+        
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
       <div class="about-container">
-        <div class="about-image">
-          <img src="{{ url_for('static', filename='assets/tsegaa.png') }}" alt="Tsega's Image">
-        </div>
         <div class="about-text">
           <h2>About Me</h2>
           <p class="about-description" id="aboutText" data-text="People say I’m a dedicated person… well, they didn’t lie. 😌 I’m the kind of person who can’t sleep until I’ve fixed that one bug or figured out why something isn’t working. Maybe it’s because of my horoscope? 🤔 …jk, I don’t believe in that.<br><br>I’m deeply fascinated by the world of technology — not just using it, but understanding how it works under the hood. For me, tech is a way to join my artistic side with building things that actually help people. Whether it’s designing clean user experiences or experimenting with creative projects, it’s as much fun as it is work.<br><br>I’m also into cybersecurity. you know, the whole “break it to fix it” thing. 🕵🏽‍♂️ If someone leaves their system exposed, I might just be the reason their password ends up on a sticky note. 😏 (Kidding, of course. Or am I?) I'm currently part of a growing community, trying to level up my skills one exploit at a time.<br><br>On a serious note, I’m easy-going, great at working with teams, and always up for sharing ideas or helping bring a project to life."></p>
@@ -79,7 +99,6 @@
             <div class="status-box"><h3>💼 Experience</h3><p>Over the past two years, I’ve immersed myself in the world of software development. Most of my experience lies in web development, where I’ve built full-stack applications. I also have hands-on exposure to mobile app development using Flutter and Kotlin. I’ve worked both independently and as part of collaborative teams to deliver real-world projects.</p></div>
             <div class="status-box"><h3>🚀 Current Focus</h3><p>Right now, I'm deepening my skills in full-stack development using React and Node.js. I’m also exploring machine learning to power AI features in my apps — like chatbots, mood forecasting, and gesture recognition.</p></div>
           </div>
-          <a href="{{ url_for('static', filename='assets/Tsega_CV.pdf') }}" class="cv-button" download>📄 Download CV</a>
         </div>
       </div>
     </section>
@@ -260,6 +279,13 @@
     <section id="contact-section">
       <div class="contact-container">
         <h2 class="section-title neon-text">Contact Me</h2>
+        <p class="contact-professional">
+          Need someone to build, debug 🛠️, and maybe even caffeinate ☕ your project? I’m your person.
+        </p>
+        <p class="contact-sarcastic">
+          Here to make new friends or waste time? Same thing. Go ahead, write me.
+        </p>
+        
         <form action="/contact" method="POST" class="contact-form">
           
           <!-- Name -->

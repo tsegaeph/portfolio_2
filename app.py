@@ -8,14 +8,15 @@ load_dotenv()
 
 app = Flask(__name__)
 
-# Load secrets from environment variables (no hardcoded defaults!)
 app.secret_key = os.getenv('FLASK_SECRET_KEY')
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
 
-# Exit if any required env var is missing
 if not app.secret_key or not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-    print("ERROR: Missing environment variables. Please set FLASK_SECRET_KEY, TELEGRAM_BOT_TOKEN, and TELEGRAM_CHAT_ID.", file=sys.stderr)
+    print(
+        "ERROR: Missing environment variables. Please set FLASK_SECRET_KEY, TELEGRAM_BOT_TOKEN, and TELEGRAM_CHAT_ID.",
+        file=sys.stderr
+    )
     sys.exit(1)
 
 
@@ -61,4 +62,5 @@ def contact():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
