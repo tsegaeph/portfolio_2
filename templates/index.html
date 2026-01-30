@@ -80,8 +80,8 @@
 
         <div class="button-container">
           <a href="#contact" class="hire-me-button"><i class="fas fa-handshake"></i>Hire Me</a>
-          <a href="{{ url_for('static', filename='assets/Tsega_CV.pdf') }}" class="cv-button" download><i class="fas fa-download"></i>
-           Download CV
+          <a href="{{ url_for('static', filename='assets/Tsega_Resume.pdf') }}" class="cv-button" download><i class="fas fa-download"></i>
+           Resume
           </a>
         </div>
         
@@ -204,42 +204,58 @@
             <h2>Trackie</h2>
             <p>Trackie is an all‑in‑one productivity web app made for engineering students. It includes a task manager, class schedule tracker, expense tracker, and even built‑in study tools to keep everything organized in one place.
               👉 <a href="https://trackiee.vercel.app" target="_blank"><strong>Check out Trackie</strong></a></p>
+              👉 <a href="https://github.com/tsegaeph/trackie.git" target="_blank"><strong>/ Github</strong></a></p>          
           </div>
         </div>
         <div class="project-card">
           <div class="img-container">
-            <img src="{{ url_for('static', filename='assets/tulia.jpg') }}" alt="Tulia">
+            <img src="{{ url_for('static', filename='assets/hack.png') }}" alt="hack">
           </div>
           <div class="card-details">
-            <h2>Tulia</h2>
-            <p>Tulia is a web app project focused on mental health and wellbeing. It has features like mood tracking, guided meditations, short games, and a chatbot (which I’m currently training myself as I learn more about ML). It’s an ongoing project that I’m actively growing as I improve my AI skills.</p>
+            <h2>Hack the campus</h2>
+            <p>Interactive cybersecurity game from a 2-day hackathon. Players explore a virtual campus and solve challenges in cryptography, web exploitation, and SQL injection.</p>
+              👉 <a href="https://hack-the-campuss.vercel.app/#/" target="_blank"><strong>Check out the game</strong></a> IT IS MADE FOR PC!!</p>
+              👉 <a href="https://github.com/tsegaeph/hack-the-campus.git" target="_blank"><strong>/ Github</strong></a> </p>
+
           </div>
         </div>
         <div class="project-card">
           <div class="img-container">
-            <img src="{{ url_for('static', filename='assets/portfolio.png') }}" alt="Portfolio">
+            <img src="{{ url_for('static', filename='assets/news.png') }}" alt="Portfolio">
           </div>
           <div class="card-details">
-            <h2>Portfolio</h2>
-            <p>You’re looking at it! 😎 Built from scratch with HTML, CSS, and JavaScript, with Flask powering the backend. It’s fully responsive, cyberpunk‑inspired, and a little corner of the internet that reflects who I am and what I do.</p>
+            <h2>News poster Telegram Bot</h2>
+            <p>Developed a Python-based Telegram bot that scrapes and posts cybersecurity news automatically. Implemented web scraping, scheduling, data parsing, and Telegram Bot API integration.</p>
+               👉 <a href="https://t.me/cybervanguard_ctbe_chat/453" target="_blank"><strong>Check out the channel's bot</strong></a></p>  
+               👉 <a href="https://github.com/tsegaeph/cyber-poster.git" target="_blank"><strong>/ Github</strong></a></p>  
+        </div>
+        </div>
+        <div class="project-card">
+          <div class="img-container">
+            <img src="{{ url_for('static', filename='assets/nexus.png') }}" alt="Sharify">
+          </div>
+          <div class="card-details">
+            <h2>NEXUS</h2>
+            <p>Full-stack e-commerce website built with modern web technologies, featuring product listings, authentication, and order management.</p>
+               👉 <a href="https://github.com/tsegaeph/alx-project-nexus" target="_blank"><strong>Github</strong></a></p>  
           </div>
         </div>
         <div class="project-card">
           <div class="img-container">
-            <img src="{{ url_for('static', filename='assets/sharify.png') }}" alt="Sharify">
+            <img src="{{ url_for('static', filename='assets/robot.png') }}" alt="Mobile Apps">
           </div>
           <div class="card-details">
-            <h2>Sharify</h2>
-            <p>Sharify started as a Kotlin project and later evolved into a Flutter app. It’s a simple and useful platform for lending and borrowing items — built to learn how to connect people and manage items through a clean mobile interface.</p>
+            <h2>Delivery Robot</h2>
+            <p>Simulated an autonomous delivery robot using ROS, Gazebo, and RViz. Implemented navigation, localization, and path-planning in a virtual environment.</p>
           </div>
         </div>
         <div class="project-card">
           <div class="img-container">
-            <img src="{{ url_for('static', filename='assets/ongoing.png') }}" alt="Mobile Apps">
+            <img src="{{ url_for('static', filename='assets/tulia.jpg') }}" alt="Mobile Apps">
           </div>
           <div class="card-details">
-            <h2>In Progress</h2>
-            <p>I’m also working on a couple of mobile app ideas that I’m not ready to fully announce yet. These projects explore features like real‑time collaboration, secure user accounts, and sleek cross‑platform experiences.</p>
+            <h2>Tulia (on going)</h2>
+            <p>AI-powered mental wellness app with mood tracking, mindful activities, and local language support. Exploring LLMs, embeddings, and prompt engineering for a chatbot feature.</p>
           </div>
         </div>
       </div>
