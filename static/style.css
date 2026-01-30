@@ -1019,7 +1019,7 @@ section {
     gap: 1rem;
     width: 105vw;
     position: relative;
-    left: -0.5rem;
+    left: 1rem;
   }
 
   .hire-me-button,
@@ -1128,7 +1128,7 @@ section {
     top: 10px;
   }
   #projects h2{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .project-card, .card-details{
     width: 40vw;
@@ -1137,6 +1137,7 @@ section {
   }
   .project-card a{
     font-size: 0.7rem;
+    margin: 0;
   }
   .projects-container{
     margin-top: 1rem;
